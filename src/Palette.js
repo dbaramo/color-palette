@@ -34,7 +34,7 @@ export default class Palette extends Component {
                 name={c.name} 
                 key={c.id} 
                 moreUrl={`/palette/${id}/${c.id}`}
-                showLink={true}
+                showingFullPalette={true}
             />
         ))
         
