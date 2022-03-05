@@ -5,13 +5,16 @@ import { withStyles } from "@material-ui/styles";
 import styles from "./styles/PaletteListStyles";
 
 class PaletteList extends Component {
+    constructor(props) {
+        super(props);
+      }
 
     goToPalette(id){
         this.props.history.push(`/palette/${id}`)
     }
 
     render() {
-        const { palettes, classes } = this.props;
+        const { palettes, classes, deletePalette } = this.props;
 
         return (
             <div className={classes.root}>
@@ -25,7 +28,11 @@ class PaletteList extends Component {
                             palettes.map(palette => (
                                 <MiniPalette 
                                     palette={palette} 
-                                    handleClick={() => this.goToPalette(palette.id)} />
+                                    handleClick={() => this.goToPalette(palette.id)}
+                                    handleDelete={deletePalette}
+                                    key={palette.id}
+                                    id={palette.id}
+                                />
                             ))
                         }
                     </div>
