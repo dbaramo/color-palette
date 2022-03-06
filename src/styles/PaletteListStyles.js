@@ -1,12 +1,25 @@
 import sizes from "./sizes";
 
 export default {
+    "@global": {
+        ".fade-exit": {
+          opacity: 1
+        },
+        ".fade-exit-active": {
+          opacity: 0,
+          transition: "opacity 500ms ease-out"
+        }
+      },
     root: {
         backgroundColor: "blue",
         height: "100vh",
         display: "flex",
         alignItems: "flex-start",
-        justifyContent: "center"
+        justifyContent: "center",
+        overflow: "scroll"
+    },
+    heading: {
+        fontSize: "2.5rem"
     },
     container: {
         width: "50%",
