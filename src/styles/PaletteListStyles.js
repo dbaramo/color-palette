@@ -41,7 +41,8 @@ export default {
         color: "white",
         alignItems: "center",
         "& a": {
-            color: "white"
+            color: "white",
+            fontSize: "1.5rem"
         }
     },
     palettes: {
