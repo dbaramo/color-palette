@@ -137,11 +137,13 @@ class NewPaletteForm extends Component {
                     Random Color
                   </Button>
                 </div>
+                <div className={classes.picker}>
                   <ColorPickerForm
                     paletteIsFull={paletteIsFull}
                     addNewColor={this.addNewColor}
                     colors={colors}
                   />
+                </div>
               </div>
             </Drawer>
             <main

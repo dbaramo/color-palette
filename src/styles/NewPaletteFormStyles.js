@@ -53,6 +53,9 @@ const styles = theme => ({
   },
   button: {
     width: "50%"
+  },
+  picker: {
+    width: "100%"
   }
 });
 
