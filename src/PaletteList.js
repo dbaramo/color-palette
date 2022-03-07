@@ -6,9 +6,6 @@ import { withStyles } from "@material-ui/styles";
 import styles from "./styles/PaletteListStyles";
 
 class PaletteList extends Component {
-    constructor(props) {
-        super(props);
-      }
 
     goToPalette(id){
         this.props.history.push(`/palette/${id}`)
